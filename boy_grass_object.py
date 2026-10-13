@@ -39,6 +39,8 @@ class Ball:
             pass
         pass
     def update(self):
+        if(self.y>30):
+            self.y-=self.y-self.speed
         pass
     def draw(self):
         pass
