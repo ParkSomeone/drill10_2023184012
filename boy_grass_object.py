@@ -27,6 +27,12 @@ class Boy:
     pass
 
 class Ball:
+    def  __init__(self):
+         pass
+    def update(self):
+        pass
+    def draw(self):
+        pass
     pass
 
 def handle_events():
