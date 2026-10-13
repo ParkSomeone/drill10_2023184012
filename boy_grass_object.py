@@ -36,7 +36,7 @@ class Ball:
             self.image=load_image('ball21x21.png')
             pass
         else:
-            self.image=load_image('ball21x21.png')
+            self.image=load_image('ball41x41.png')
             pass
         pass
     def update(self):
