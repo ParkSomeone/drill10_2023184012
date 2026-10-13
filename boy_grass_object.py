@@ -43,6 +43,7 @@ class Ball:
             self.y-=self.y-self.speed
         pass
     def draw(self):
+        self.image.draw(self.x,self.y)
         pass
     pass
 
