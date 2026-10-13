@@ -28,7 +28,8 @@ class Boy:
 
 class Ball:
     def  __init__(self):
-        self.x,self.y=random.randint(50,750),599
+        self.x=random.randint(50,750)
+        self.y=599
         self.size=random.randint(0,1)
         self.speed=random.randint(5,10)
         if self.size==0:
@@ -39,8 +40,9 @@ class Ball:
             pass
         pass
     def update(self):
-        if(self.y>30):
-            self.y-=self.y-self.speed
+        if(self.y>90):
+            self.y-=self.speed
+            print(self.x,self.y)
         pass
     def draw(self):
         self.image.draw(self.x,self.y)
@@ -65,8 +67,10 @@ def reset_world():
     grass = Grass()
     world.append(grass)
     team=[Boy()for i in range(11)]  #11명의 객체생성 후 team리스트에 넣는다
-    balls=[Ball()for i in range(20)]
+    balls=[Ball()for i in range(1)]
     world+=team                     #world리스트에 team리스트를 합친다
+    world+=balls
+    pass
 
 def update_world():
     for o in world:
