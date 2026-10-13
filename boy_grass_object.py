@@ -42,7 +42,6 @@ class Ball:
     def update(self):
         if(self.y>90):
             self.y-=self.speed
-            print(self.x,self.y)
         pass
     def draw(self):
         self.image.draw(self.x,self.y)
@@ -67,7 +66,7 @@ def reset_world():
     grass = Grass()
     world.append(grass)
     team=[Boy()for i in range(11)]  #11명의 객체생성 후 team리스트에 넣는다
-    balls=[Ball()for i in range(1)]
+    balls=[Ball()for i in range(20)]
     world+=team                     #world리스트에 team리스트를 합친다
     world+=balls
     pass
